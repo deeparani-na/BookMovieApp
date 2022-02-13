@@ -7,10 +7,27 @@
     padding-left: 16px;
     text-align: right;
 }
-img{
-    background-color: #ff7f7f;
-    height: 35px;
-    animation: rotation 8s infinite linear;
+
+  @-webkit-keyframes film-icon-spin {
+    to { -webkit-transform: rotateY(360deg); }
+  }
+  @keyframes film-icon-spin {
+    to { transform: rotateY(360deg); }          
+  }
+  @-moz-keyframes film-icon-spin{
+    to { -moz-transform: rotateY(360deg); }
+  }
+  
+  /*
+  Animate the logo svg file
+  */
+  .film-icon {
     float: left;
-}
+    height: 35px;
+    background: #ff7f7f;
+  
+    animation: film-icon-spin infinite 8s linear;
+    -webkit-animation: film-icon-spin 8s infinite linear;
+    -moz-animation: film-icon-spin 8s infinite linear;  
+  }
 

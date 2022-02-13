@@ -8,7 +8,7 @@ const Header = function(){
  return(
          <div className='header'>
              
-             <img  src={ReactLogo} alt="React Logo"/>
+             <img  className="film-icon" src={ReactLogo} alt="React Logo"/>
              
              <button 
              variant="contained" 
